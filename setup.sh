@@ -64,7 +64,16 @@ tput setaf 3
 tput setaf 2
 	~/media_build/build
 	sleep 3
-echo -e "${bldorange}   -------------------------------------------------- "
+tput setaf 3
+	echo  
+	echo Installing Linuxtv source code ...
+	echo  
+	sleep 3
+tput setaf 2
+	make install
+	sleep 3
+	echo
+		echo -e "${bldorange}   -------------------------------------------------- "
         echo -e "${bldorange}   |   ${txtund}Installation completed    | "
         echo -e "${bldorange}   |                                                | "
         echo -e "${bldorange}   |       ${txtund}dont forget to reboot!.        | "
