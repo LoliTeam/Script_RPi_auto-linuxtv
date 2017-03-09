@@ -21,11 +21,11 @@ clear
 
         echo -e "${bldred}                                 "
         echo -e "${bldred}   ----------------------------- "
-        echo -e "${bldred}   |    ${bldnormal}Auto-installation Linuxtv     ${bldred}| "
+        echo -e "${bldred}   | ${bldnormal}Auto-installation Linuxtv  ${bldred}| "
         echo -e "${bldred}   |                           | "
         echo -e "${bldred}   | ${bldnormal}Installing requiered packages ${bldred}| "
         echo -e "${bldred}   |                           | "
-        echo -e "${bldred}   |   ${bldnormal}Setting up your RPi  ${bldred}| "
+        echo -e "${bldred}   |${bldnormal}Setting up your RPi${bldred}| "
         echo -e "${bldred}   ----------------------------  "
 
 tput setaf 3
@@ -46,7 +46,7 @@ tput setaf 3
 	echo  
 	sleep 3
 tput setaf 2
-	time sudo apt-get -y raspberrypi-kernel-headers git make gcc patch lsdiff wget perl
+	time sudo apt-get install -y raspberrypi-kernel-headers git make gcc patch lsdiff wget perl
 tput setaf 3
 	echo  
 	echo Downloading updated Linuxtv source code ...
