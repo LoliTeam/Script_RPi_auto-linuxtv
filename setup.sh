@@ -46,7 +46,7 @@ tput setaf 3
 	echo  
 	sleep 3
 tput setaf 2
-	time sudo apt-get install -y raspberrypi-kernel-headers git make gcc patch lsdiff wget perl
+	time sudo apt-get install -y raspberrypi-kernel-headers git make gcc patch patchutils wget perl
 tput setaf 3
 	echo  
 	echo Downloading updated Linuxtv source code ...
@@ -55,6 +55,7 @@ tput setaf 3
 tput setaf 2
 	cd ~/
 	git clone git://linuxtv.org/media_build.git
+	cd ~/media_build/
 	sleep 3
 tput setaf 3
 	echo  
